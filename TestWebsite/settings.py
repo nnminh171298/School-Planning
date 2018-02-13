@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
 	'ngocminh9862.pythonanywhere.com',
+	'127.0.0.1',
 ]
 
 
