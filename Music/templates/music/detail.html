@@ -3,7 +3,7 @@
 {% block title %}Album Detail{% endblock %}
 
 {% block body %}
-	<img src="{{ album.album_logo }}" alt="Album_logo" width="512" height="288">﻿
+	<img src="{{ album.album_logo.url }}" alt="Album_logo" width="512" height="288">﻿
 	<hr>
 	<h1>{{ album.album_title }}</h1>
 	<h3>{{ album.artist }}</h3>
@@ -13,7 +13,6 @@
 		{% if song.is_favorite %}
 			<img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/heart-icon.png" width="15" height="15">﻿
 		{% endif %}
-	{% endfor %}
 		<br>
-	</form>
+	{% endfor %}
 {% endblock %}
